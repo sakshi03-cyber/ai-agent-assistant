@@ -1,0 +1,17 @@
+langchain
+langgraph
+openai
+chromadb
+sentence-transformers
+tavily-python
+sympy
+pypdf
+unstructured
+fastapi
+uvicorn
+streamlit
+python-dotenv
+ragas
+loguru 
+langchain-community 
+langchain-text-splitters
