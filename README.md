@@ -12,7 +12,6 @@ This project demonstrates a **Retrieval Augmented Generation (RAG) pipeline comb
 * 📄 PDF document question answering (RAG)
 * 🌐 Web search for general knowledge queries
 * ➗ Mathematical calculation tool
-* 💬 Chat history support
 * 🖥 Streamlit chat interface
 * ⚡ FastAPI backend
 * 🧠 Vector database for document retrieval
@@ -383,3 +382,4 @@ This project demonstrates how to build a **multi-tool AI agent system** that can
 * Log tool usage for transparency
 
 It showcases practical concepts used in modern AI systems such as **RAG, vector databases, and tool-based reasoning agents**.
+
