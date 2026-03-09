@@ -1,8 +1,9 @@
 import fitz  # PyMuPDF
 import os
-from app.utils.logger import logger 
-import camelot 
+from app.utils.logger import logger
+import camelot
 from langchain_core.documents import Document
+
 
 def extract_images(pdf_path, output_folder="data/images"):
 
@@ -37,18 +38,20 @@ def extract_images(pdf_path, output_folder="data/images"):
 
     logger.info(f"Extracted {len(image_paths)} images")
 
-    return image_paths 
+    return image_paths
+
 
 def extract_tables(pdf_path):
 
-    tables = camelot.read_pdf(pdf_path, pages="all")
+    tables = camelot.read_pdf(pdf_path, pages="all", flavor="stream")
 
     table_data = []
 
     for table in tables:
-        table_data.append(table.df.to_string())
+        table_data.append(table.df.to_markdown())
 
-    return table_data 
+    return table_data
+
 
 def tables_to_documents(tables):
 
